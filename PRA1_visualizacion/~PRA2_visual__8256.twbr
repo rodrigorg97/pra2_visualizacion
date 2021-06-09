@@ -1,0 +1,923 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook source-build='2021.1.2 (20211.21.0511.0935)' source-platform='win' version='18.1' xml:base='https://dub01.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='PRA2_visualizacion' path='/t/rodrigoricogomez/workbooks' revision='1.0' site='rodrigoricogomez' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='meteorite-landings' inline='true' name='federated.0hsclt51nci77a1257bjk1ijptr0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='meteorite-landings' name='ogrdirect.122etts1cwafjm177oyp60rz490b'>
+            <connection class='ogrdirect' directory='C:/Users/rodri/OneDrive/Escritorio/Datos cambio portatil/Máster Ciencia de Datos/Visualización de datos/PRA1_visualizacion' filename='meteorite-landings.geojson' password='' server='' tablename='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='ogrdirect.122etts1cwafjm177oyp60rz490b' name='meteorite-landings.geojson' table='[meteorite-landings.geojson]' type='table'>
+          <columns>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='integer' name='id' ordinal='1' />
+            <column datatype='string' name='nametype' ordinal='2' />
+            <column datatype='string' name='recclass' ordinal='3' />
+            <column datatype='string' name='mass' ordinal='4' />
+            <column datatype='string' name='fall' ordinal='5' />
+            <column datatype='integer' name='year' ordinal='6' />
+            <column datatype='string' name='GeoLocation' ordinal='7' />
+            <column datatype='spatial' name='Geometry' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='ogrdirect.122etts1cwafjm177oyp60rz490b' name='meteorite-landings.geojson' table='[meteorite-landings.geojson]' type='table'>
+          <columns>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='integer' name='id' ordinal='1' />
+            <column datatype='string' name='nametype' ordinal='2' />
+            <column datatype='string' name='recclass' ordinal='3' />
+            <column datatype='string' name='mass' ordinal='4' />
+            <column datatype='string' name='fall' ordinal='5' />
+            <column datatype='integer' name='year' ordinal='6' />
+            <column datatype='string' name='GeoLocation' ordinal='7' />
+            <column datatype='spatial' name='Geometry' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[meteorite-landings.geojson]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[meteorite-landings.geojson]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nametype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nametype]</local-name>
+            <parent-name>[meteorite-landings.geojson]</parent-name>
+            <remote-alias>nametype</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recclass</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recclass]</local-name>
+            <parent-name>[meteorite-landings.geojson]</parent-name>
+            <remote-alias>recclass</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mass]</local-name>
+            <parent-name>[meteorite-landings.geojson]</parent-name>
+            <remote-alias>mass</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fall</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fall]</local-name>
+            <parent-name>[meteorite-landings.geojson]</parent-name>
+            <remote-alias>fall</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[meteorite-landings.geojson]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeoLocation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeoLocation]</local-name>
+            <parent-name>[meteorite-landings.geojson]</parent-name>
+            <remote-alias>GeoLocation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[meteorite-landings.geojson]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>8</ordinal>
+            <caption>Geometría</caption>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Geo Location' datatype='string' name='[GeoLocation]' role='dimension' type='nominal' />
+      <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+      <column aggregation='None' caption='Year (agrupación)' datatype='integer' name='[Year (agrupación)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[year]' peg='0' size='10' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='meteorite-landings.geojson' datatype='table' name='[__tableau_internal_object_id__].[meteorite-landings.geojson_1392502FDD3246E2898D2847F15AE6D4]' role='measure' type='quantitative' />
+      <column aggregation='CountD' caption='Fall' datatype='string' name='[fall]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='string' datatype-customized='true' default-role='measure' default-type='quantitative' name='[id]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Mass' datatype='real' datatype-customized='true' name='[mass]' role='dimension' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Nametype' datatype='string' name='[nametype]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Recclass' datatype='string' name='[recclass]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[fall]' derivation='None' name='[none:fall:nk]' pivot='key' type='nominal' />
+      <column-instance column='[mass]' derivation='None' name='[none:mass:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+      <group caption='Acción (Fall)' hidden='true' name='[Action (Fall)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[fall]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Fall,Mass,Name,Recclass)' hidden='true' name='[Action (Fall,Mass,Name,Recclass)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[fall]' />
+          <groupfilter function='level-members' level='[none:mass:ok]' />
+          <groupfilter function='level-members' level='[name]' />
+          <groupfilter function='level-members' level='[recclass]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Fall,Mass,Name,Year)' hidden='true' name='[Action (Fall,Mass,Name,Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[fall]' />
+          <groupfilter function='level-members' level='[none:mass:ok]' />
+          <groupfilter function='level-members' level='[name]' />
+          <groupfilter function='level-members' level='[none:year:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Fall,Name,Year)' hidden='true' name='[Action (Fall,Name,Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[fall]' />
+          <groupfilter function='level-members' level='[name]' />
+          <groupfilter function='level-members' level='[none:year:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Fall,Year)' hidden='true' name='[Action (Fall,Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[fall]' />
+          <groupfilter function='level-members' level='[none:year:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Year)' hidden='true' name='[Action (Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:year:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-hidden-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:fall:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fell&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Found&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='meteorite-landings.geojson' id='meteorite-landings.geojson_1392502FDD3246E2898D2847F15AE6D4'>
+            <properties context=''>
+              <relation connection='ogrdirect.122etts1cwafjm177oyp60rz490b' name='meteorite-landings.geojson' table='[meteorite-landings.geojson]' type='table'>
+                <columns>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='integer' name='id' ordinal='1' />
+                  <column datatype='string' name='nametype' ordinal='2' />
+                  <column datatype='string' name='recclass' ordinal='3' />
+                  <column datatype='string' name='mass' ordinal='4' />
+                  <column datatype='string' name='fall' ordinal='5' />
+                  <column datatype='integer' name='year' ordinal='6' />
+                  <column datatype='string' name='GeoLocation' ordinal='7' />
+                  <column datatype='spatial' name='Geometry' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filtro 1 (generado)' name='[Action1_FF21EE7A64994AD69DA7159A149B9D4A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Hoja 5' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filtro 2 (generado)' name='[Action2_3C4E0D3929ED4C538230FEDEED17889E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Hoja 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filtro 3 (generado)' name='[Action3_78F2A8452CC445BC887A407AC762FD40]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Hoja 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meteorite-landings' name='federated.0hsclt51nci77a1257bjk1ijptr0' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0hsclt51nci77a1257bjk1ijptr0'>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Fall' datatype='string' name='[fall]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='string' datatype-customized='true' default-role='measure' default-type='quantitative' name='[id]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Mass' datatype='real' datatype-customized='true' name='[mass]' role='dimension' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[fall]' derivation='None' name='[none:fall:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mass]' derivation='None' name='[none:mass:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column aggregation='CountD' caption='Recclass' datatype='string' name='[recclass]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Mass,Name,Recclass)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_3C4E0D3929ED4C538230FEDEED17889E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[fall]' />
+              <groupfilter function='level-members' level='[none:mass:ok]' />
+              <groupfilter function='level-members' level='[name]' />
+              <groupfilter function='level-members' level='[recclass]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_FF21EE7A64994AD69DA7159A149B9D4A]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[fall]' />
+              <groupfilter function='level-members' level='[none:year:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Year)]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Mass,Name,Recclass)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[cnt:id:qk]' scope='rows' value='Cuentas' />
+            <encoding attr='space' class='0' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[cnt:id:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+            <format attr='width' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[cnt:id:qk]' value='68' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' value='73' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:fall:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hsclt51nci77a1257bjk1ijptr0].[cnt:id:qk]</rows>
+        <cols>[federated.0hsclt51nci77a1257bjk1ijptr0].[none:fall:nk]</cols>
+      </table>
+      <simple-id uuid='{9457DF99-ABFD-4D21-947B-048CDDD25062}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meteorite-landings' name='federated.0hsclt51nci77a1257bjk1ijptr0' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0hsclt51nci77a1257bjk1ijptr0'>
+            <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column aggregation='CountD' caption='Fall' datatype='string' name='[fall]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Mass' datatype='real' datatype-customized='true' name='[mass]' role='dimension' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[fall]' derivation='None' name='[none:fall:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mass]' derivation='None' name='[none:mass:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[recclass]' derivation='None' name='[none:recclass:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column aggregation='CountD' caption='Recclass' datatype='string' name='[recclass]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall)]'>
+            <groupfilter function='level-members' level='[fall]' user:ui-action-filter='[Action3_78F2A8452CC445BC887A407AC762FD40]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_FF21EE7A64994AD69DA7159A149B9D4A]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[fall]' />
+              <groupfilter function='level-members' level='[none:year:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Year)]'>
+            <groupfilter function='level-members' level='[none:year:ok]' user:ui-action-filter='[Action1_4B5FC284F15D4935BA65D9F7AD16E0ED]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Year)]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Year)]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[Longitude (generated)]' field-type='quantitative' max='59334772.538948938' min='27586743.40864908' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[Latitude (generated)]' field-type='quantitative' max='13068406.765165623' min='-3306049.6067620665' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:fall:nk]' />
+              <size column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:mass:qk]' />
+              <geometry column='[federated.0hsclt51nci77a1257bjk1ijptr0].[clct:Geometry:nk]' />
+              <lod column='[federated.0hsclt51nci77a1257bjk1ijptr0].[clct:Geometry:nk]' />
+              <lod column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:name:nk]' />
+              <lod column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:recclass:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.91154694557189941' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hsclt51nci77a1257bjk1ijptr0].[Latitude (generated)]</rows>
+        <cols>[federated.0hsclt51nci77a1257bjk1ijptr0].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B6A87194-C379-453F-861D-B32E0AFB8FC4}' />
+    </worksheet>
+    <worksheet name='Hoja 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meteorite-landings' name='federated.0hsclt51nci77a1257bjk1ijptr0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hsclt51nci77a1257bjk1ijptr0'>
+            <column aggregation='CountD' caption='Fall' datatype='string' name='[fall]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Mass' datatype='real' datatype-customized='true' name='[mass]' role='dimension' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[fall]' derivation='None' name='[none:fall:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mass]' derivation='None' name='[none:mass:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[mass]' derivation='None' name='[none:mass:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Recclass' datatype='string' name='[recclass]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall)]'>
+            <groupfilter function='level-members' level='[fall]' user:ui-action-filter='[Action3_78F2A8452CC445BC887A407AC762FD40]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Mass,Name,Recclass)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_3C4E0D3929ED4C538230FEDEED17889E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[fall]' />
+              <groupfilter function='level-members' level='[none:mass:ok]' />
+              <groupfilter function='level-members' level='[name]' />
+              <groupfilter function='level-members' level='[recclass]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_FF21EE7A64994AD69DA7159A149B9D4A]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[fall]' />
+              <groupfilter function='level-members' level='[none:year:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Year)]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Mass,Name,Recclass)]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:mass:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:year:qk]' scope='cols' value='Año' />
+            <format attr='title' class='0' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:mass:qk]' scope='rows' value='Masa (g)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:fall:nk]' />
+              <lod column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:mass:qk]' />
+              <lod column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hsclt51nci77a1257bjk1ijptr0].[none:mass:qk]</rows>
+        <cols>[federated.0hsclt51nci77a1257bjk1ijptr0].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{35AE2741-CBE2-4AAC-8C87-2E9CA584FFB6}' />
+    </worksheet>
+    <worksheet name='Hoja 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meteorite-landings' name='federated.0hsclt51nci77a1257bjk1ijptr0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hsclt51nci77a1257bjk1ijptr0'>
+            <column aggregation='None' caption='Year (agrupación)' datatype='integer' name='[Year (agrupación)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[year]' peg='0' size='10' />
+            </column>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Fall' datatype='string' name='[fall]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='string' datatype-customized='true' default-role='measure' default-type='quantitative' name='[id]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Mass' datatype='real' datatype-customized='true' name='[mass]' role='dimension' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Year (agrupación)]' derivation='None' name='[none:Year (agrupación):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[mass]' derivation='None' name='[none:mass:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+            <column aggregation='CountD' caption='Recclass' datatype='string' name='[recclass]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall)]'>
+            <groupfilter function='level-members' level='[fall]' user:ui-action-filter='[Action3_78F2A8452CC445BC887A407AC762FD40]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Mass,Name,Recclass)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_3C4E0D3929ED4C538230FEDEED17889E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[fall]' />
+              <groupfilter function='level-members' level='[none:mass:ok]' />
+              <groupfilter function='level-members' level='[name]' />
+              <groupfilter function='level-members' level='[recclass]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_FF21EE7A64994AD69DA7159A149B9D4A]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[fall]' />
+              <groupfilter function='level-members' level='[none:year:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Year)]'>
+            <groupfilter function='level-members' level='[none:year:ok]' user:ui-action-filter='[Action1_4B5FC284F15D4935BA65D9F7AD16E0ED]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Year)]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall)]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Year)]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Mass,Name,Recclass)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[cnt:id:qk]' scope='rows' value='Cuentas' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:Year (agrupación):ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0hsclt51nci77a1257bjk1ijptr0].[cnt:id:qk]</rows>
+        <cols>[federated.0hsclt51nci77a1257bjk1ijptr0].[none:Year (agrupación):ok]</cols>
+      </table>
+      <simple-id uuid='{A5C30DBF-0027-4F9A-A331-96E1C0BA57B4}' />
+    </worksheet>
+    <worksheet name='Hoja 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='meteorite-landings' name='federated.0hsclt51nci77a1257bjk1ijptr0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hsclt51nci77a1257bjk1ijptr0'>
+            <column aggregation='CountD' caption='Fall' datatype='string' name='[fall]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Mass' datatype='real' datatype-customized='true' name='[mass]' role='dimension' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[fall]' derivation='None' name='[none:fall:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mass]' derivation='None' name='[none:mass:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Recclass' datatype='string' name='[recclass]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall)]'>
+            <groupfilter function='level-members' level='[fall]' user:ui-action-filter='[Action3_78F2A8452CC445BC887A407AC762FD40]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Mass,Name,Recclass)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_3C4E0D3929ED4C538230FEDEED17889E]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[fall]' />
+              <groupfilter function='level-members' level='[none:mass:ok]' />
+              <groupfilter function='level-members' level='[name]' />
+              <groupfilter function='level-members' level='[recclass]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:mass:ok]'>
+            <groupfilter function='level-members' level='[none:mass:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[none:mass:ok]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall,Mass,Name,Recclass)]</column>
+            <column>[federated.0hsclt51nci77a1257bjk1ijptr0].[Action (Fall)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:year:qk]' scope='cols' value='Año' />
+            <format attr='height' field='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:year:qk]' value='33' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:fall:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0hsclt51nci77a1257bjk1ijptr0].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{68097AF1-058A-4078-8260-BC69FC1AFE89}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='23' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='21' w='98400' x='800' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='87375' id='17' param='horz' w='80200' x='800' y='11625'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='87375' id='15' w='80200' x='800' y='11625'>
+                  <zone h='52270' id='5' name='Hoja 2' show-title='false' w='80200' x='800' y='11625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='35105' id='19' name='Hoja 3' show-title='false' w='40100' x='800' y='63895'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='35105' id='24' name='Hoja 4' show-title='false' w='40100' x='40900' y='63895'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='10625' id='14' name='Hoja 5' show-title='false' w='80200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='20' name='Hoja 1' show-title='false' w='18200' x='81000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='28' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='27' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='77' h='10625' id='14' is-fixed='true' name='Hoja 5' show-title='false' w='80200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='20' is-fixed='true' name='Hoja 1' w='18200' x='81000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52270' id='5' is-fixed='true' name='Hoja 2' show-title='false' w='80200' x='800' y='11625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='35105' id='19' is-fixed='true' name='Hoja 3' show-title='false' w='40100' x='800' y='63895'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='35105' id='24' is-fixed='true' name='Hoja 4' w='40100' x='40900' y='63895'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C5AD6EA6-BA18-45A0-9487-319772A09EA9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:fall:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B56F4CD3-4458-4F90-9540-8850758C7745}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Hoja 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CE378161-0FD4-4AD0-9932-181C0DB80F53}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:fall:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:mass:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D93B35A-7BCA-407A-9ACC-85BC8DA38AC8}' />
+    </window>
+    <window class='worksheet' name='Hoja 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='2' param='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:fall:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{586EB301-DFC1-4484-B30D-1C7588AF02D0}' />
+    </window>
+    <window class='worksheet' name='Hoja 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{304B58A7-9401-4AAF-B2FA-A5E5DF413C47}' />
+    </window>
+    <window class='worksheet' name='Hoja 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0hsclt51nci77a1257bjk1ijptr0].[none:fall:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CD2EE2F-6B07-4895-8BC5-D090B73E358F}' />
+    </window>
+  </windows>
+</workbook>

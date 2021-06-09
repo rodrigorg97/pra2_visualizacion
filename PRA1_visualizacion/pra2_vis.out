@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{An\341lisis exploratorio de los datos}{}% 1
+\BOOKMARK [1][-]{section.2}{Planteamiento de la visualizaci\363n}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{El mapa}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Diagrama de dispersi\363n a\361o VS masa}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Histograma en la variable a\361o}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Barras de filtrado}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Distribuci\363n espacial}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Implementaci\363n}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{El mapa}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Diagrama de dispersi\363n}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Histograma}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.4}{Diagrama de barras}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Dashboard}{}% 13
